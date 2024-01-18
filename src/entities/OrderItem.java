@@ -43,6 +43,7 @@ public class OrderItem {
         return quantity * price;
     }
 
+    @Override
     public String toString(){
         return product.getName()
                 + "$"

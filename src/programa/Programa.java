@@ -38,12 +38,15 @@ public class Programa {
         Client client = new Client(name, email, dateOfBirth);
 
         System.out.println("Enter order data: ");
+
         System.out.print("Status: ");
         String status = input.nextLine().toUpperCase();
+
         System.out.print("How many items to this order? ");
         int quantidadeProdutos = input.nextInt();
 
         Order order  = new Order(new Date(), OrderStatus.valueOf(status), client);
+
         for (int i = 1; i <= quantidadeProdutos;i++){
 
             System.out.printf("Enter #%d item data: \n", i);
